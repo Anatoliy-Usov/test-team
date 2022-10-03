@@ -1,0 +1,97 @@
+.twitter {
+  background-color: getColor('violet-accent');
+  max-width: 100%;
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/tablet/instagram-t-1x.jpg);
+    background-position: right bottom;
+    background-size: calc(100% / 2) 100%;
+    background-repeat: no-repeat;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/tablet/instagram-t-2x.jpg);
+    }
+    @media screen and (min-width: 1440px) {
+      background-image: url(../images/desktop/instagram-d-1x.jpg);
+    }
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/instagram-d-2x.jpg);
+    }
+  }
+}
+
+.twitter__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.18;
+  color: getColor('level-1');
+  @media screen and (min-width: 768px) {
+    font-size: 55px;
+    line-height: 1.2;
+    max-width: 304px;
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 285px;
+  }
+}
+.twitter__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1, 5;
+  color: getColor('dark-grey');
+  margin-top: 16px;
+  max-width: 304px;
+  @media screen and (min-width: 768px) {
+    margin-top: 24px;
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 576px;
+  }
+}
+
+.twitter__soc {
+  display: flex;
+  justify-content: start;
+  gap: 50px;
+  margin-top: 125px;
+  @media screen and (min-width: 768px) {
+    margin-top: 133px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-top: 135px;
+  }
+}
+
+.twitter__item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1, 5;
+  color: getColor('level-1');
+  margin-bottom: 3px;
+  border-bottom: 1px solid getColor('light-grey');
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+  @media screen and (min-width: 1440px) {
+    display: block;
+  }
+}
+
+.twitter__item-tablet {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1, 5;
+    color: getColor('level-1');
+    margin-bottom: 3px;
+    border-bottom: 1px solid getColor('light-grey');
+    max-width: 304px;
+  }
+  @media screen and (min-width: 1440px) {
+    display: none;
+  }
+}
